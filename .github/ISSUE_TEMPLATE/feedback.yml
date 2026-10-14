@@ -1,0 +1,28 @@
+name: 使用反馈 / 隐私联系请求
+description: 反馈问题或建议；隐私请求请勿包含敏感信息。
+title: "[反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这是公开反馈页面。请勿填写姓名配置、手机号、证件号、订单码、账号凭据或未遮盖的个人页面。
+        隐私数据请求请只写“希望联系维护者处理隐私请求”，等待维护者确认非公开沟通方式。
+  - type: input
+    id: version
+    attributes:
+      label: App / iOS 版本
+      placeholder: 例如 App 1.0、iOS 26.5
+  - type: textarea
+    id: issue
+    attributes:
+      label: 问题与复现步骤
+      description: 说明所在功能、操作步骤、预期结果与实际结果。请勿提交个人资料。
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公开信息确认
+      options:
+        - label: 我已移除个人资料、凭据与未遮盖的截图。
+          required: true
