@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yy7074.github.io/xuexing-tools-site/sitemap.xml
